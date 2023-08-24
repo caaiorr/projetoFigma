@@ -1,0 +1,59 @@
+
+.containerAfterHeader{
+    padding-bottom: 100px;
+    padding-left: 42px;
+    margin-right: 42px;
+    max-width: 599px;
+}
+
+.personIntroduction{
+    display: inline-block;
+    background-color: rgba(46, 45, 45, 0.473);
+    /* background-color: rgba(14, 13, 13, 0.781); */
+    box-shadow: black 5px 5px 5px 1px;
+    color: rgb(224, 221, 221);
+    margin: 116px 0px 0px 0px;
+    padding: 42px;
+}
+
+.personIntroduction h1, h2{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 5px 7px 1px black;
+}
+
+.personIntroduction h1{
+    display: block;
+    font-size: 40px;
+    margin-bottom: 28px;
+    font-weight: 700;
+}
+
+.containerButtonAH{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 38px;
+}
+
+.containerButtonAH button{
+    height: 60px;
+    width: 170px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 5px 1px black;
+    transition: transform 0.4s cubic-bezier(1,-0.61, 1,-0.65);
+    font-family: inherit;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.containerButtonAH button:hover{
+    background-color: rgb(162, 92, 228);
+    color: black;
+    transform: scale(1.05);
+}
