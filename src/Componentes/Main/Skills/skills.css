@@ -1,37 +1,85 @@
 
-.containerSkills{
-    border: 2px solid white;
+.contH1{
+    display: flex;
+    justify-content: center;
 }
 
-    .contH1{
+.contH1 h1{
+    height: 40px;
+    line-height: 40px;
+    width: 240px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 5px 2px 5px black;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3vh 21vw 0px 21vw;
+    
+}
+
+    .renderedSkill{
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        width: 325px;
+        min-width: 325px;
+        height: 50px;
+        margin-bottom: 40px;
     }
 
-    .contH1 h1{
-        height: 40px;
-        line-height: 40px;
-        width: 240px;
-        border: 2px solid white;
-        color: aliceblue;
-        text-align: center;
-        font-size: 40px;
+    .renderedSkill img{
+        width: 50px;
+        height: 50px;
     }
 
-    .skills{
-        display: flex;
-        justify-content: center;
+    .renderedSkill h2{
+        display: inline;
+        text-align: left;
+        font-size: 20px;
+        font-weight: 400;
+        text-shadow: none;
+        color: white;
+        margin-left: 10px;
     }
 
+        .coloredBar{
+            position: absolute;
+            background-color: blueviolet;
+            height: 20px;
+            width: 190px;
+            margin-left: 11px;
+            margin-top: 1px;
+        }
 
-.div1{
-    width: 100px;
-    height: 100px;
-    border: 2px solid white;
-}
+        .uncoloredBar{
+            height: 20px;
+            width: 260px;
+            margin-top: 5px;
+            margin-left: 10px;
+            border: 1px solid white;
+        }
+    
+    .containerReact .coloredBar{
+       width: 110px;
+    }
 
-.div2{
-    width: 100px;
-    height: 100px;
-    border: 2px solid white;
-}
+    .containerPHP .coloredBar{
+        width: 70px;
+    }
+
+    .containerNodeJS .coloredBar{
+        width: 50px;
+    }
+
+    .containerMySql .coloredBar{
+        width: 110px;
+    }
+
+    .containerSQL .coloredBar{
+        width: 150px;
+    }
