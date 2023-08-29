@@ -1,17 +1,17 @@
 
-.contH1{
+.contH2{
     display: flex;
     justify-content: center;
 }
 
-.contH1 h1{
+.contH2 h2{
     height: 40px;
     line-height: 40px;
     width: 240px;
     color: aliceblue;
     text-align: center;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
     text-shadow: 5px 2px 5px black;
 }
 
@@ -19,8 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 3vh 21vw 0px 21vw;
-    
+    padding: 3vh 16.5vw 0px 24vw;
 }
 
     .renderedSkill{
@@ -37,7 +36,7 @@
         height: 50px;
     }
 
-    .renderedSkill h2{
+    .renderedSkill dt{
         display: inline;
         text-align: left;
         font-size: 20px;
@@ -47,22 +46,33 @@
         margin-left: 10px;
     }
 
-        .coloredBar{
-            position: absolute;
-            background-color: blueviolet;
-            height: 20px;
-            width: 190px;
-            margin-left: 11px;
-            margin-top: 1px;
-        }
+    progress{
+        -webkit-appearance: none;
+    }
 
-        .uncoloredBar{
-            height: 20px;
-            width: 260px;
-            margin-top: 5px;
-            margin-left: 10px;
-            border: 1px solid white;
-        }
+    progress::-webkit-progress-bar {
+        height: 20px;
+        margin-top: 9px;
+        margin-left: 10px;
+        border: 2px solid black;
+        background: aliceblue;
+    }
+
+    progress::-moz-progress-bar{
+        height: 20px;
+        margin-top: 9px;
+        margin-left: 10px;
+        border: 2px solid black;
+        background: aliceblue;
+    }
+
+    ::-webkit-progress-value{
+        background-color: blueviolet;
+    }
+
+    ::-moz-progress-value {
+        background-color: blueviolet;
+    }
     
     .containerReact .coloredBar{
        width: 110px;

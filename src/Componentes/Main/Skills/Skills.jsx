@@ -23,17 +23,30 @@ export const Skills = ()=> {
         ];
 
         const renderSkills = skillsObj.map((e, i, arr)=> {
+            let progress = 0;
+            
+            if(e.name === 'HTML-5' || e.name === 'CSS-3' || e.name === 'JavaScript' || e.name === 'SQL'){
+                progress = 70;
+            }
+            if(e.name === 'React' || e.name === 'MySql'){
+                progress = 35;
+            }
+            if(e.name === 'PHP'){
+                progress = 20;
+            };
+
             return (
-                <div key={i} className="renderedSkill">
-                   <img src={e.icon} alt="CSS" />
-                   <div className="containerNameBar">
-                        <h2>{e.name}</h2>
-                        <div className={`container${e.name}`}>
-                            <div className="coloredBar"></div>
-                            <div className="uncoloredBar"></div>
-                        </div>
-                   </div>
-                </div>
+                <dl key={i} className="renderedSkill">
+                    <dd>
+                        <img src={e.icon} alt="CSS" />
+                    </dd>
+                    <div className="containerNameBar">
+                        <dt>{e.name}</dt>
+                        <dd className={`container${e.name}`}>
+                            <progress className="teste14" max="100" value={progress}>{progress}%</progress>
+                        </dd>
+                    </div>
+                </dl>
             );
         });
 
@@ -42,12 +55,12 @@ export const Skills = ()=> {
 
     return(
         <section className="containerSkills">
-            <div className="contH1">
-                <h1>Skills</h1>
+            <div className="contH2">
+                <h2>Skills</h2>
             </div>
-            <div className="skills">
+            <article className="skills">
                 {showSkills()}
-            </div>
+            </article>
         </section>
     );
 };
