@@ -1,95 +1,81 @@
 
-.contH2{
-    display: flex;
-    justify-content: center;
+.containerSkills{
+    margin-top: 50px;
 }
 
-.contH2 h2{
-    height: 40px;
-    line-height: 40px;
-    width: 240px;
-    color: aliceblue;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 700;
-    text-shadow: 5px 2px 5px black;
-}
+    .contH2{
+        display: flex;
+        justify-content: center;
+    }
 
-.skills{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 3vh 16.5vw 0px 24vw;
-}
+    .contH2 h2{
+        height: 40px;
+        line-height: 40px;
+        width: 240px;
+        color: aliceblue;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        text-shadow: 5px 2px 5px black;
+    }
 
-    .renderedSkill{
+    .skills{
         display: flex;
         flex-wrap: wrap;
-        width: 325px;
-        min-width: 325px;
-        height: 50px;
-        margin-bottom: 40px;
+        justify-content: space-between;
+        padding: 3vh 16.5vw 0px 24vw;
     }
 
-    .renderedSkill img{
-        width: 50px;
-        height: 50px;
-    }
+        .renderedSkill{
+            display: flex;
+            flex-wrap: wrap;
+            width: 325px;
+            min-width: 325px;
+            height: 50px;
+            margin-bottom: 40px;
+        }
 
-    .renderedSkill dt{
-        display: inline;
-        text-align: left;
-        font-size: 20px;
-        font-weight: 400;
-        text-shadow: none;
-        color: white;
-        margin-left: 10px;
-    }
+        .renderedSkill img{
+            width: 50px;
+            height: 50px;
+        }
 
-    progress{
-        -webkit-appearance: none;
-    }
+            .containerNameBar dt{
+                display: inline;
+                text-align: left;
+                font-size: 20px;
+                font-weight: 400;
+                text-shadow: none;
+                color: white;
+                margin-left: 10px;
+            }
 
-    progress::-webkit-progress-bar {
-        height: 20px;
-        margin-top: 9px;
-        margin-left: 10px;
-        border: 2px solid black;
-        background: aliceblue;
-    }
+            progress{
+                -webkit-appearance: none;
+            }
 
-    progress::-moz-progress-bar{
-        height: 20px;
-        margin-top: 9px;
-        margin-left: 10px;
-        border: 2px solid black;
-        background: aliceblue;
-    }
+            progress::-webkit-progress-bar {
+                height: 20px;
+                margin-top: 9px;
+                margin-left: 10px;
+                border: 2px solid black;
+                background: aliceblue;
+            }
 
-    ::-webkit-progress-value{
-        background-color: blueviolet;
-    }
+            progress::-moz-progress-bar{
+                height: 20px;
+                margin-top: 9px;
+                margin-left: 10px;
+                border: 2px solid black;
+                background: aliceblue;
+            }
 
-    ::-moz-progress-value {
-        background-color: blueviolet;
-    }
-    
-    .containerReact .coloredBar{
-       width: 110px;
-    }
+                ::-webkit-progress-value{
+                    background-color: blueviolet;
+                }
 
-    .containerPHP .coloredBar{
-        width: 70px;
-    }
-
-    .containerNodeJS .coloredBar{
-        width: 50px;
-    }
-
-    .containerMySql .coloredBar{
-        width: 110px;
-    }
-
-    .containerSQL .coloredBar{
-        width: 150px;
-    }
+                ::-moz-progress-value {
+                    background-color: blueviolet;
+                }
+        
+        

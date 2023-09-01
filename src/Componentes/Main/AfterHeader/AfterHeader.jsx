@@ -10,10 +10,6 @@ export const AfterHeader = ()=> {
                 <h1>Caio V. Rodrigues</h1>
                 <h2>Front-End Developer and Programer</h2>
             </div>
-            <div className="containerButtonAH">
-                <button>CLICK</button>
-                <button>CLICK</button>
-            </div>
         </section>
     );
 };

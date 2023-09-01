@@ -1,9 +1,7 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
 
-
-/* RESET */
+/*--------------------- RESET --------------------------*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,7 +45,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* RESET FIM */
+/*--------------------- RESET FIM -----------------------*/
 
 body{
 	background-color: black;
@@ -66,19 +64,19 @@ body::-webkit-scrollbar-thumb{
     background-color: rgba(111, 108, 114, 0.5);
 }
 
-.containerAll{
-	min-height: 100vh;
-	max-width: 1440px;
-	background-color: rgb(37, 36, 36);
-	background-image: url(./Img/fundoOk.jpg);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-size: cover;
-	margin: auto;
-}
+	.containerAll{
+		min-height: 100vh;
+		max-width: 1440px;
+		background-color: rgb(37, 36, 36);
+		background-image: url(./Img/fundoOk.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		background-size: cover;
+		margin: auto;
+	}
 
-header{
-	background-color: rgba(46, 45, 45, 0.473);
-	box-shadow: 5px 15px 20px 5px black;
-}
+		header{
+			background-color: rgba(46, 45, 45, 0.473);
+			box-shadow: 5px 15px 20px 5px black;
+		}
