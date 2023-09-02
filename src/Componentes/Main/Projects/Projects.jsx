@@ -8,11 +8,13 @@ import nav3 from '../../../Img/Projetos/nav3.png';
 export const Projects = ()=> {
     
     const projects = ()=> {
-        const arr = [ nav2, nav3, nav1 ];
 
-        return arr.map((val, i, arr)=> 
-            <div className="project">
-                <img src={val} alt="" />
+        const arr = [ { img: nav2, link: 'https://www.google.com.br/?hl=pt-BR'}, { img: nav3, link: 'https://www.google.com.br/?hl=pt-BR' }, { img: nav1, link: 'https://www.google.com.br/?hl=pt-BR' } ];
+
+        return arr.map((e, i, arr)=> 
+            <div key={i} className="project">
+                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank">Acessar</a>
+                <img src={e.img} alt="" />
             </div>
         );
     };

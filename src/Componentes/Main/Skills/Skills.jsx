@@ -24,29 +24,32 @@ export const Skills = ()=> {
 
         const renderSkills = skillsObj.map((e, i, arr)=> {
             let progress = 0;
+            const progress70 = e.name === 'HTML-5' || e.name === 'CSS-3' || e.name === 'JavaScript' || e.name === 'SQL';
+            const progress50 = e.name === 'React' || e.name === 'MySql';
+            const progress20 = e.name === 'PHP';
             
-            if(e.name === 'HTML-5' || e.name === 'CSS-3' || e.name === 'JavaScript' || e.name === 'SQL'){
+            if(progress70){
                 progress = 70;
             }
-            if(e.name === 'React' || e.name === 'MySql'){
+            if(progress50){
                 progress = 35;
             }
-            if(e.name === 'PHP'){
+            if(progress20){
                 progress = 20;
             };
 
             return (
-                <dl key={i} className="renderedSkill">
-                    <dd>
+                <article key={i} className="renderedSkill">
+                    <figure>
                         <img src={e.icon} alt="CSS" />
-                    </dd>
+                    </figure>
                     <div className="containerNameBar">
-                        <dt>{e.name}</dt>
-                        <dd className={`container${e.name}`}>
-                            <progress className="teste14" max="100" value={progress}>{progress}%</progress>
-                        </dd>
+                        <h2>{e.name}</h2>
+                        <div className={`container${e.name}`}>
+                            <progress className="teste14" max="100" value={progress}>{`${progress}%`}</progress>
+                        </div>
                     </div>
-                </dl>
+                </article>
             );
         });
 
@@ -58,9 +61,9 @@ export const Skills = ()=> {
             <div className="contH2">
                 <h2>Skills</h2>
             </div>
-            <article className="skills">
+            <div className="skills">
                 {showSkills()}
-            </article>
+            </div>
         </section>
     );
 };
