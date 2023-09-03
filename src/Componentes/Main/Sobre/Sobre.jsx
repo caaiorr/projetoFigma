@@ -1,6 +1,8 @@
 import React from "react";
 import './sobre.css';
 
+import star from '../../../Img/Carrossel/star.png';
+
 export const Sobre = ()=> {
 
     return (
@@ -28,6 +30,23 @@ export const Sobre = ()=> {
                 <div className="itemEt">
                     <div className="connect left"></div>
                     <div className="connect"></div>
+                </div>
+            </div>
+            <div className="containerStars">
+                <div className="itemStar">
+                    <img src={star} alt="" />
+                </div>
+                <div className="itemStar">
+                    <img src={star} alt="" />
+                </div>
+                <div className="itemStar">
+                    <img src={star} alt="" />
+                </div>
+                <div className="itemStar">
+                    <img src={star} alt="" />
+                </div>
+                <div className="itemStar">
+                    <img src={star} alt="" />
                 </div>
             </div>
         </section>
