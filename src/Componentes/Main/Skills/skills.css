@@ -77,5 +77,17 @@
                 ::-moz-progress-value {
                     background-color: blueviolet;
                 }
+                
+    .containerLineDivision{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+        .lineDivision{
+            height: 5px;
+            width: 90%;
+            border-bottom: 1px solid rgb(173, 166, 166);
+        }
         
         

@@ -78,6 +78,9 @@ export const Skills = ()=> {
             <div className="skills">
                 {showSkills()}
             </div>
+            <div className="containerLineDivision">
+                <div className="lineDivision"></div>
+            </div>
         </section>
     );
 };

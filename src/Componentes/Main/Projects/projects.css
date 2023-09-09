@@ -1,7 +1,4 @@
 
-.allProjects{
-    margin-top: 100px;
-}
 
 .allProjects h2{
     font-size: 40px;
@@ -19,7 +16,6 @@
 
         .project{
             display: flex;
-            
             align-items: center;
             flex-direction: column;
             color: white;
@@ -41,4 +37,11 @@
 
         .project a:hover{
             background-color: black;
+        }
+
+        .containerImg{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }

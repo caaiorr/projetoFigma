@@ -14,7 +14,9 @@ export const Projects = ()=> {
         return arr.map((e, i, arr)=> 
             <div key={i} className="project">
                 <a href="https://www.google.com.br/?hl=pt-BR" target="_blank">Acessar</a>
-                <img src={e.img} alt="" />
+                <div className="containerImg">
+                    <img src={e.img} alt="" />
+                </div>
             </div>
         );
     };
